@@ -67,7 +67,6 @@ totalPages:any;
       console.log("Todos los usuarios",this.total,this.user.totalUsers);
       console.log("estoy dentro",this.users);
       
-    
     })
   }
 

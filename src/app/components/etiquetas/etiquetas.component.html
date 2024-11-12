@@ -1,0 +1,15 @@
+<div>
+    <h2>Lista de Etiquetas</h2>
+  
+    <ul>
+      <li *ngFor="let etiqueta of etiquetas">
+        <p>{{ etiqueta.name }}: {{ etiqueta.price }}</p>
+        <button (click)="deleteEtiqueta(etiqueta._id)">Eliminar</button>
+      </li>
+    </ul>
+  
+    <input [(ngModel)]="newEtiqueta" placeholder="Nuevo nombre de etiqueta" />
+    <input [(ngModel)]="newPrice" placeholder="Nueva precio estimado de interés" />
+    <button (click)="createEtiqueta()">Crear Etiqueta</button>
+  </div>
+  
